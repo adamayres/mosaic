@@ -33,24 +33,21 @@ $mp-header-nav-transition: 200ms;
 $mp-header-nav-top: 40px;
 
 // body parameters
-$mp-body-padding-top: 50px;
+$mp-body-padding-top: 100px;
 $mp-body-padding-bottom: 30px;
 
 // main slides
 $mp-slides-width: 1012px;
 
-
-
 // body styles
 body {
-  padding-bottom: $mp-body-padding-bottom;
+  padding-top: $mp-body-padding-top;
   text-align: center;
   color: $mp-blue;
 }
 
 // nav styles
 .mp-main-nav {
-  margin-top: $mp-body-padding-top;
 
   .mp-brand-logo {
     height: $mp-header-nav-img-height;
@@ -76,10 +73,8 @@ body {
   }
 }
 
-
-
 body.mp-scrolled-top {
-  margin-top: $mp-body-padding-top + $mp-header-nav-img-height;
+  //margin-top: $mp-header-nav-img-height;
 }
 
 .mp-scrolled-top .mp-main-nav {
