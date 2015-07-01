@@ -48,6 +48,7 @@ body {
 
 // nav styles
 .mp-main-nav {
+  z-index: 16;
 
   .mp-brand-logo {
     height: $mp-header-nav-img-height;
@@ -71,18 +72,6 @@ body {
       padding-left: 10px;
     }
   }
-}
-
-body.mp-scrolled-top {
-  //margin-top: $mp-header-nav-img-height;
-}
-
-.mp-scrolled-top .mp-main-nav {
-  margin-top: 0px;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .mp-scrolled-top .mp-brand-logo {

@@ -6061,28 +6061,22 @@ body {
   text-align: center;
   color: #353797; }
 
-.mp-main-nav .mp-brand-logo {
-  height: 84px;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-.mp-main-nav .nav li {
-  padding-left: 30px;
-  font-weight: bold; }
-  .mp-main-nav .nav li.mp-nav-fb, .mp-main-nav .nav li.mp-nav-twitter {
-    padding-left: 30px; }
-    .mp-main-nav .nav li.mp-nav-fb a, .mp-main-nav .nav li.mp-nav-twitter a {
-      padding-left: 0;
-      padding-right: 0; }
-  .mp-main-nav .nav li.mp-nav-twitter {
-    padding-left: 10px; }
-
-.mp-scrolled-top .mp-main-nav {
-  margin-top: 0px;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1; }
+.mp-main-nav {
+  z-index: 16; }
+  .mp-main-nav .mp-brand-logo {
+    height: 84px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  .mp-main-nav .nav li {
+    padding-left: 30px;
+    font-weight: bold; }
+    .mp-main-nav .nav li.mp-nav-fb, .mp-main-nav .nav li.mp-nav-twitter {
+      padding-left: 30px; }
+      .mp-main-nav .nav li.mp-nav-fb a, .mp-main-nav .nav li.mp-nav-twitter a {
+        padding-left: 0;
+        padding-right: 0; }
+    .mp-main-nav .nav li.mp-nav-twitter {
+      padding-left: 10px; }
 
 .mp-scrolled-top .mp-brand-logo {
   height: 42px;
