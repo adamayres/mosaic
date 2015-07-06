@@ -1,0 +1,39 @@
+// body styles
+body {
+  padding-top: $mp-body-padding-top;
+  text-align: center;
+  color: $mp-blue;
+}
+
+// panels
+.mp-panel {
+  display: inline-block;
+  border: none;
+
+  .panel-heading {
+    border-bottom: none
+  }
+
+  .panel-body {
+    padding: 0;
+  }
+}
+
+// footer styles
+footer {
+  text-align: center;
+  ul li {
+    &:after {
+      content: "|";
+      padding: 0 0 0 15px;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+// mission
+.mp-mission {
+  margin-bottom: 15px;
+}

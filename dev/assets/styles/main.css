@@ -6057,128 +6057,9 @@ button.close {
     display: none !important; } }
 
 body {
-  padding-top: 110px;
+  padding-top: 115px;
   text-align: center;
   color: #353797; }
-
-.mp-main-nav {
-  z-index: 16; }
-  .mp-main-nav .mp-brand-logo {
-    height: 84px;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease; }
-  .mp-main-nav .nav li {
-    padding-left: 30px;
-    font-weight: bold; }
-    .mp-main-nav .nav li.mp-nav-fb, .mp-main-nav .nav li.mp-nav-twitter {
-      padding-left: 30px; }
-      .mp-main-nav .nav li.mp-nav-fb a, .mp-main-nav .nav li.mp-nav-twitter a {
-        padding-left: 0;
-        padding-right: 0; }
-    .mp-main-nav .nav li.mp-nav-twitter {
-      padding-left: 10px; }
-
-.mp-scrolled-top .mp-brand-logo {
-  height: 42px;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-@media (min-width: 768px) {
-  .mp-scrolled-top .navbar-nav > li > a {
-    padding-top: 12px;
-    padding-bottom: 12px; } }
-
-.mp-nav-fb img, .mp-nav-twitter img {
-  height: 34px;
-  width: 34px;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-.mp-main-nav .mp-nav-fb a, .mp-main-nav .mp-nav-twitter a {
-  padding-top: 24px;
-  padding-bottom: 24px; }
-
-.mp-scrolled-top .mp-nav-fb img, .mp-scrolled-top .mp-nav-twitter img {
-  height: 20px;
-  width: 20px;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-.mp-scrolled-top .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px; }
-
-.mp-scrolled-top .mp-main-nav {
-  min-height: 50px; }
-
-.mp-main-slides {
-  max-width: 1012px;
-  margin: auto auto 26px auto; }
-
-.mp-mission {
-  margin-bottom: 15px; }
-
-.mp-donate-btn {
-  font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.carousel-caption {
-  bottom: -8px;
-  padding-bottom: 0;
-  text-shadow: none; }
-
-.carousel-caption p {
-  color: #fff;
-  padding: 30px 10px 10px 10px; }
-
-.carousel-caption div {
-  display: inline-block;
-  padding: 10px;
-  top: 20px;
-  position: relative; }
-
-.carousel-control.left, .carousel-control.right {
-  height: 270px; }
-
-.mp-slide-1 .carousel-caption div, .mp-slide-1-indicator.active {
-  background-color: #F16F29; }
-
-.mp-slide-1 .carousel-caption p {
-  background-color: #353797; }
-
-.mp-slide-2 .carousel-caption div, .mp-slide-2-indicator.active {
-  background-color: #353797; }
-
-.mp-slide-2 .carousel-caption p {
-  background-color: #0B87A0; }
-
-.mp-slide-2 .carousel-caption {
-  bottom: 10px; }
-
-.mp-slide-3 .carousel-caption div, .mp-slide-3-indicator.active {
-  background-color: #0B87A0; }
-
-.mp-slide-3 .carousel-caption p {
-  background-color: #F16F29; }
-
-.mp-slide-4 .carousel-caption div, .mp-slide-4-indicator.active {
-  background-color: #F16F29; }
-
-.mp-slide-4 .carousel-caption p {
-  background-color: #353797; }
-
-.carousel-indicators {
-  left: initial;
-  bottom: 80px;
-  right: 7%;
-  width: initial; }
-  .carousel-indicators li, .carousel-indicators .active {
-    border: 2px solid #fff;
-    border-radius: 16px;
-    height: 18px;
-    width: 18px;
-    margin: 1px; }
 
 .mp-panel {
   display: inline-block;
@@ -6195,3 +6076,208 @@ footer {
     padding: 0 0 0 15px; }
   footer ul li:last-child:after {
     content: ""; }
+
+.mp-mission {
+  margin-bottom: 15px; }
+
+.mp-main-nav {
+  padding: 10px 0 5px 0;
+  border-bottom: none;
+  z-index: 16; }
+  .mp-main-nav .mp-brand-logo {
+    height: 84px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  .mp-main-nav .nav li {
+    padding-left: 30px;
+    font-weight: bold; }
+    .mp-main-nav .nav li.mp-nav-fb, .mp-main-nav .nav li.mp-nav-twitter {
+      padding-left: 30px; }
+      .mp-main-nav .nav li.mp-nav-fb a, .mp-main-nav .nav li.mp-nav-twitter a {
+        padding-left: 0;
+        padding-right: 0; }
+    .mp-main-nav .nav li.mp-nav-twitter {
+      padding-left: 10px; }
+  .mp-main-nav .mp-nav-fb a, .mp-main-nav .mp-nav-twitter a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+
+.mp-nav-fb img, .mp-nav-twitter img {
+  height: 34px;
+  width: 34px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+.mp-scrolled-top .mp-brand-logo {
+  height: 42px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+.mp-scrolled-top .navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+.mp-scrolled-top .mp-main-nav {
+  min-height: 50px;
+  border-bottom: 1px solid #f5f5f5;
+  webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3); }
+
+.navbar-btn {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+.mp-donate-btn {
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+@media (min-width: 768px) {
+  .mp-scrolled-top .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  .mp-scrolled-top .navbar-nav > li.mp-nav-icon > a {
+    padding-top: 8px;
+    padding-bottom: 8px; } }
+
+@media (max-width: 992px) {
+  .mp-main-nav .nav li {
+    padding-left: 15px; } }
+
+@media (max-width: 768px) {
+  .mp-main-nav .mp-brand-logo {
+    max-height: 65px;
+    padding-left: 15px; }
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 0;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  .mp-scrolled-top .navbar-toggle {
+    margin-top: 2px;
+    margin-bottom: 0;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; } }
+
+.mp-main-slides {
+  max-width: 1012px;
+  margin: auto auto 26px auto; }
+
+.mp-slide {
+  position: relative; }
+
+.mp-slide-image {
+  width: 100%;
+  min-height: 166px;
+  min-width: 480px; }
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    left: 7%;
+    right: 7%; } }
+
+.carousel-caption {
+  bottom: -8px;
+  padding-bottom: 0;
+  text-shadow: none; }
+
+.mp-slide-quote {
+  color: #fff; }
+  .mp-slide-quote p {
+    margin-bottom: 0px; }
+
+.mp-slide-quote {
+  padding: 30px 10px 20px 10px; }
+
+.mp-slide-title {
+  display: inline-block;
+  padding: 10px;
+  top: 20px;
+  position: relative; }
+
+.carousel-control.left, .carousel-control.right {
+  height: 270px; }
+
+.mp-slide-1 .mp-slide-title, .slick-dots li:nth-child(1).slick-active {
+  background-color: #F16F29; }
+
+.mp-slide-1 .mp-slide-quote {
+  background-color: #353797; }
+
+.mp-slide-2 .mp-slide-title, .slick-dots li:nth-child(2).slick-active {
+  background-color: #353797; }
+
+.mp-slide-2 .mp-slide-quote {
+  background-color: #0B87A0; }
+
+.mp-slide-2 .carousel-caption {
+  bottom: 10px; }
+
+.mp-slide-3 .mp-slide-title, .slick-dots li:nth-child(3).slick-active {
+  background-color: #0B87A0; }
+
+.mp-slide-3 .mp-slide-quote {
+  background-color: #F16F29; }
+
+.mp-slide-4 .mp-slide-title, .slick-dots li:nth-child(4).slick-active {
+  background-color: #F16F29; }
+
+.mp-slide-4 .mp-slide-quote {
+  background-color: #353797; }
+
+ul.slick-dots {
+  bottom: 30%;
+  right: 2%;
+  text-align: right;
+  width: auto; }
+  ul.slick-dots li, ul.slick-dots .slick-active {
+    border: 3px solid #fff;
+    border-radius: 23px;
+    height: 26px;
+    width: 26px;
+    margin-right: 7px; }
+  ul.slick-dots li button {
+    width: initial;
+    height: initial;
+    padding: initial; }
+    ul.slick-dots li button .slick-dots li.slick-active button:before {
+      opacity: .75;
+      color: black; }
+    ul.slick-dots li button:before {
+      font-family: initial;
+      font-size: initial;
+      line-height: initial;
+      position: initial;
+      top: initial;
+      left: initial;
+      width: initial;
+      height: initial;
+      content: initial;
+      text-align: initial;
+      opacity: initial;
+      color: initial; }
+
+@media screen and (max-width: 768px) {
+  ul.slick-dots {
+    bottom: -18px;
+    right: initial;
+    width: auto;
+    text-align: center;
+    width: 100%; }
+    ul.slick-dots li, ul.slick-dots .slick-active {
+      border: 5px solid #f5f5f5;
+      border-radius: 34.5px;
+      height: 39px;
+      width: 39px;
+      margin-right: 10.5px; } }
+
+@media screen and (max-width: 570px) {
+  ul.slick-dots {
+    bottom: -24px; } }

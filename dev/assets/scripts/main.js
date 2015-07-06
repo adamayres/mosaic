@@ -17,7 +17,17 @@
     });
   };
 
+  Mosaic.Slideshow = function () {
+    $('#mp-main-slides').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 7000,
+      arrows: false
+    });
+  };
+
   Mosaic.ScrollHandler();
+  Mosaic.Slideshow();
 })(window.jQuery);
 
 

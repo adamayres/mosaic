@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <!-- endbuild -->
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick-theme.css"/>
+
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.1/json3.min.js"></script>
@@ -39,10 +42,11 @@
             <li><a href="/about">ABOUT</a></li>
             <li><a href="/involved">GET INVOLVED</a></li>
             <li><a href="/news">NEWS</a></li>
+            <li class="visible-xs"><button type="button" class="btn btn-info navbar-btn mp-donate-btn">Donate</button></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="mp-nav-fb"><a href="https://www.facebook.com/TheMosaicProject"><img src="assets/images/fb-icon.png" /></a></li>
-            <li class="mp-nav-twitter"><a href="https://twitter.com/momomosaic"><img src="assets/images/twitter-icon.png" /></a></li>
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li class="mp-nav-fb mp-nav-icon visible-md visible-lg"><a href="https://www.facebook.com/TheMosaicProject"><img src="assets/images/fb-icon.png" /></a></li>
+            <li class="mp-nav-twitter mp-nav-icon visible-md visible-lg"><a href="https://twitter.com/momomosaic"><img src="assets/images/twitter-icon.png" /></a></li>
             <li class="pull-right"><button type="button" class="btn btn-info navbar-btn mp-donate-btn">Donate</button></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -50,69 +54,54 @@
     </nav><!-- header nav -->
     <div class="container">
       <div class="row">
-        <div class="mp-mission">
-          <p>Mosaic teaches people — from 4th graders to adults in the workplace — <br />how to reach over the things that divide us in order to build inclusive communities where we celebrate our diversity.</p>
-          <p>In doing so, we transform our lives and our world. We make peace. Join us.</p>
-        </div>
-        <div id="mp-main-slides" class="carousel slide mp-main-slides" data-ride="carousel" data-interval="10000000">
-          <!-- Carousel Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#mp-main-slides" data-slide-to="0" class="active mp-slide-1-indicator"></li>
-            <li data-target="#mp-main-slides" data-slide-to="1" class="mp-slide-2-indicator"></li>
-            <li data-target="#mp-main-slides" data-slide-to="2" class="mp-slide-3-indicator"></li>
-            <li data-target="#mp-main-slides" data-slide-to="3" class="mp-slide-4-indicator"></li>
-          </ol>
-
-          <!-- Wrapper for Carousel Slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active mp-slide-1">
-              <img src="assets/images/slide-1-assert.jpg">
-              <div class="carousel-caption">
-                <div>ASSERTIVENESS</div>
-                <p>“I’ve changed after Mosaic because I’m better at solving conflicts and problems that the world has.
-                Also, I’m better at standing up for myself. I used to be really passive. I think I’ll keep those changes.”
-                — Tiana, Student</p>
-              </div>
-            </div>
-            <div class="item mp-slide-2">
-              <img src="assets/images/slide-2-conflict.jpg">
-              <div class="carousel-caption">
-                <div>CONFLICT RESOLUTION</div>
-                <p>“I used to be a bystander, but now, after Mosaic,
-                I know how to be an ally and help both the teaser and the person being teased.”
-                — Jack, student</p>
-              </div>
-            </div>
-            <div class="item mp-slide-3">
-              <img src="assets/images/slide-3-empathy.jpg">
-              <div class="carousel-caption">
-                <div>EMPATHY</div>
-                <p>“I learned how awful it feels to not be listened to, to be excluded and discriminated against.
-                These things will be taken with me as I step out of Mosaic and into my school.”
-                — Leah, student</p>
-              </div>
-            </div>
-            <div class="item mp-slide-4">
-              <img src="assets/images/slide-4-team.jpg">
-              <div class="carousel-caption">
-                <div>TEAM BUILDING</div>
-                <p>“I saw some of my students take on leadership roles in group activities, putting in to practice the words
-                they’ve used before — REALLY listening, opening up to new ideas, being allies, supporting each other.”
-                — Leslie, teacher</p>
-              </div>
-            </div>
+        <div class="col-lg-12">
+          <div class="mp-mission">
+            <p>Mosaic teaches people — from 4th graders to adults in the workplace — <br />how to reach over the things that divide us in order to build inclusive communities where we celebrate our diversity.</p>
+            <p>In doing so, we transform our lives and our world. We make peace. Join us.</p>
           </div>
-
-          <!-- Carousel Controls -->
-          <a class="left carousel-control" href="#mp-main-slides" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#mp-main-slides" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div><!-- .carousel -->
+          <div id="mp-main-slides" class="mp-main-slides">
+            <div class="mp-slide mp-slide-1">
+              <img class="mp-slide-image" src="assets/images/slide-1-assert.jpg">
+              <div class="carousel-caption">
+                <div class="mp-slide-title">ASSERTIVENESS</div>
+                <div class="mp-slide-quote">
+                  <p>“I’ve changed after Mosaic because I’m better at solving conflicts and problems that the world has. Also, I’m better at standing up for myself. I used to be really passive. I think I’ll keep those changes.”</p>
+                  <p>— Tiana, Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="mp-slide mp-slide-2">
+              <img class="mp-slide-image" src="assets/images/slide-2-conflict.jpg">
+              <div class="carousel-caption">
+                <div class="mp-slide-title">CONFLICT RESOLUTION</div>
+                <div class="mp-slide-quote">
+                  <p>“I used to be a bystander, but now, after Mosaic, I know how to be an ally and help both the teaser and the person being teased.”</p>
+                  <p>— Jack, student</p>
+                </div>
+              </div>
+            </div>
+            <div class="mp-slide mp-slide-3">
+              <img class="mp-slide-image" src="assets/images/slide-3-empathy.jpg">
+              <div class="carousel-caption">
+                <div class="mp-slide-title">EMPATHY</div>
+                <div class="mp-slide-quote">
+                  <p>“I learned how awful it feels to not be listened to, to be excluded and discriminated against. These things will be taken with me as I step out of Mosaic and into my school.”</p>
+                  <p>— Leah, student</p>
+                </div>
+              </div>
+            </div>
+            <div class="mp-slide mp-slide-4">
+              <img class="mp-slide-image" src="assets/images/slide-4-team.jpg">
+              <div class="carousel-caption">
+                <div class="mp-slide-title">TEAM BUILDING</div>
+                <div class="mp-slide-quote">
+                  <p>“I saw some of my students take on leadership roles in group activities, putting in to practice the words they’ve used before — REALLY listening, opening up to new ideas, being allies, supporting each other.”</p>
+                  <p>— Leslie, teacher</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .carousel -->
+        </div><!-- .col -->
       </div><!-- .row -->
       <div class="row">
         <div class="col-md-4 col-md-offset-2">
@@ -165,6 +154,8 @@
     <script src="/assets/lib/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/assets/lib/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
 
     <!-- build:js  assets/scripts/main.min.js -->
     <script src="/assets/scripts/main.js"></script>

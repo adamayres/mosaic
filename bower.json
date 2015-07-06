@@ -6,6 +6,8 @@
     "bootstrap-sass-official": "latest",
     "modernizr": "latest",
     "jquery-legacy": "jquery#1.11.1",
-    "jquery-modern": "jquery#2.1.1"
+    "jquery-modern": "jquery#2.1.1",
+    "hammerjs": "~2.0.4",
+    "slick.js": "~1.5.5"
   }
 }

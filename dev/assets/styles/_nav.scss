@@ -1,0 +1,126 @@
+// nav styles
+.mp-main-nav {
+  padding: 10px 0 5px 0;
+  border-bottom: none;
+  z-index: 16;
+
+  .mp-brand-logo {
+    height: $mp-header-nav-img-height;
+    transition: all $mp-header-nav-transition ease;
+  }
+
+  .nav li {
+    padding-left: 30px;
+    font-weight: bold;
+
+    &.mp-nav-fb, &.mp-nav-twitter {
+      padding-left: 30px;
+
+      a {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      img {
+
+      }
+    }
+
+    &.mp-nav-twitter {
+      padding-left: 10px;
+    }
+  }
+
+  .mp-nav-fb a, .mp-nav-twitter a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: all $mp-header-nav-transition ease;
+  }
+}
+
+.mp-nav-fb img, .mp-nav-twitter img {
+  height: 34px;
+  width: 34px;
+  transition: all $mp-header-nav-transition ease;
+}
+
+.mp-scrolled-top {
+  .mp-brand-logo {
+    height: $mp-header-nav-img-height / 2;
+    transition: all $mp-header-nav-transition ease;
+  }
+
+  .mp-nav-fb a, .mp-nav-twitter a {
+  //  height: 20px;
+  //  width: 20px;
+  //  padding-top: 8px;
+  //  padding-bottom: 8px;
+  //  transition: all $mp-header-nav-transition ease;
+  }
+
+  .navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: all $mp-header-nav-transition ease;
+  }
+
+  .mp-main-nav {
+    min-height: 50px;
+    border-bottom: 1px solid #f5f5f5;
+    webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.navbar-btn {
+  transition: all $mp-header-nav-transition ease;
+}
+
+// donate button
+.mp-donate-btn {
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .mp-scrolled-top .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all $mp-header-nav-transition ease;
+  }
+
+  .mp-scrolled-top .navbar-nav > li.mp-nav-icon > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mp-main-nav .nav li {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mp-main-nav {
+    .mp-brand-logo {
+      max-height: 65px;
+      padding-left: 15px;
+    }
+  }
+
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 0;
+    transition: all $mp-header-nav-transition ease;
+  }
+
+  .mp-scrolled-top {
+    .navbar-toggle {
+      margin-top: 2px;
+      margin-bottom: 0;
+      transition: all $mp-header-nav-transition ease;
+    }
+  }
+}

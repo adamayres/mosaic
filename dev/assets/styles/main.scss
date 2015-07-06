@@ -1,3 +1,20 @@
+// header nav parameters
+$mp-header-nav-img-height: 84px;
+$mp-header-nav-transition: 200ms;
+$mp-header-nav-top: 40px;
+
+// body parameters
+$mp-body-padding-top: 115px;
+$mp-body-padding-bottom: 30px;
+
+// main slides
+$mp-slides-width: 1012px;
+
+// brand colors
+$mp-orange: #F16F29;
+$mp-blue: #353797;
+$mp-teal: #0B87A0;
+
 // Overridden twbs parameters
 $navbar-height: auto;
 $icon-font-path:"../fonts/";
@@ -8,13 +25,8 @@ $navbar-default-color: #000;
 $navbar-default-link-color: #000;
 $navbar-height: 84px;
 
-
 $btn-border-radius-base: 0;
 $border-radius-base: 0;
-
-$mp-orange: #F16F29;
-$mp-blue: #353797;
-$mp-teal: #0B87A0;
 
 $brand-primary: $mp-blue;
 $brand-info: $mp-orange;
@@ -26,221 +38,6 @@ $state-success-border: $mp-teal;
 
 // twbs
 @import "../lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
-
-// header nav parameters
-$mp-header-nav-img-height: 84px;
-$mp-header-nav-transition: 200ms;
-$mp-header-nav-top: 40px;
-
-// body parameters
-$mp-body-padding-top: 110px;
-$mp-body-padding-bottom: 30px;
-
-// main slides
-$mp-slides-width: 1012px;
-
-// body styles
-body {
-  padding-top: $mp-body-padding-top;
-  text-align: center;
-  color: $mp-blue;
-}
-
-// nav styles
-.mp-main-nav {
-  z-index: 16;
-
-  .mp-brand-logo {
-    height: $mp-header-nav-img-height;
-    transition: all $mp-header-nav-transition ease;
-  }
-
-  .nav li {
-    padding-left: 30px;
-    font-weight: bold;
-
-    &.mp-nav-fb, &.mp-nav-twitter {
-      padding-left: 30px;
-
-      a {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-
-    &.mp-nav-twitter {
-      padding-left: 10px;
-    }
-  }
-}
-
-.mp-scrolled-top .mp-brand-logo {
-  height: $mp-header-nav-img-height / 2;
-  transition: all $mp-header-nav-transition ease;
-}
-
-@media (min-width: 768px) {
-  .mp-scrolled-top .navbar-nav > li > a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-}
-
-//@media (max-width: 768px) {
-//  body .mp-main-nav {
-//    margin-top: 0;
-//  }
-//
-//  body.mp-scrolled-top {
-//    margin-top: 0;
-//  }
-//
-//  .mp-scrolled-top .mp-brand-logo {
-//    height: $mp-header-nav-img-height;
-//  }
-//}
-
-.mp-nav-fb img, .mp-nav-twitter img {
-  height: 34px;
-  width: 34px;
-  transition: all $mp-header-nav-transition ease;
-
-}
-.mp-main-nav .mp-nav-fb a, .mp-main-nav .mp-nav-twitter a {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.mp-scrolled-top .mp-nav-fb img, .mp-scrolled-top .mp-nav-twitter img {
-  height: 20px;
-  width: 20px;
-  transition: all $mp-header-nav-transition ease;
-}
-
-.mp-scrolled-top .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.mp-scrolled-top .mp-main-nav {
-  min-height: 50px;
-}
-
-// main slides
-.mp-main-slides {
-  max-width: $mp-slides-width;
-  margin: auto auto 26px auto;
-}
-
-.mp-mission {
-  margin-bottom: 15px;
-}
-
-// donate button
-.mp-donate-btn {
-  font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.carousel-caption {
-  bottom: -8px;
-  padding-bottom: 0;
-  text-shadow: none;
-}
-
-.carousel-caption p {
-  color: #fff;
-  padding: 30px 10px 10px 10px;
-}
-
-.carousel-caption div {
-  display: inline-block;
-  padding: 10px;
-  top: 20px;
-  position: relative;
-}
-
-.carousel-control.left, .carousel-control.right {
-  height: 270px;
-}
-
-.mp-slide-1 .carousel-caption div, .mp-slide-1-indicator.active {
-  background-color: $mp-orange;
-}
-
-.mp-slide-1 .carousel-caption p {
-  background-color: $mp-blue;
-}
-
-.mp-slide-2 .carousel-caption div, .mp-slide-2-indicator.active {
-  background-color: $mp-blue;
-}
-
-.mp-slide-2 .carousel-caption p {
-  background-color: $mp-teal;
-}
-
-.mp-slide-2 .carousel-caption {
-  bottom: 10px;
-}
-
-.mp-slide-3 .carousel-caption div, .mp-slide-3-indicator.active {
-  background-color: $mp-teal;
-}
-
-.mp-slide-3 .carousel-caption p {
-  background-color: $mp-orange;
-}
-
-.mp-slide-4 .carousel-caption div, .mp-slide-4-indicator.active {
-  background-color: $mp-orange;
-}
-
-.mp-slide-4 .carousel-caption p {
-  background-color: $mp-blue;
-}
-
-.carousel-indicators {
-  left: initial;
-  bottom: 80px;
-  right: 7%;
-  width: initial;
-
-  li, .active {
-    border: 2px solid #fff;
-    border-radius: 16px;
-    height: 18px;
-    width: 18px;
-    margin: 1px;
-  }
-
-}
-
-// panels
-.mp-panel {
-  display: inline-block;
-  border: none;
-
-  .panel-heading {
-    border-bottom: none
-  }
-
-  .panel-body {
-    padding: 0;
-  }
-}
-
-// footer styles
-footer {
-  text-align: center;
-  ul li {
-    &:after {
-      content: "|";
-      padding: 0 0 0 15px;
-    }
-    &:last-child:after {
-      content: "";
-    }
-  }
-}
+@import "_common";
+@import "_nav";
+@import "_slideshow";
