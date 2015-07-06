@@ -21,6 +21,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
 .carousel-caption {
   bottom: -8px;
   padding-bottom: 0;

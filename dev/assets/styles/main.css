@@ -6183,6 +6183,10 @@ footer {
     left: 7%;
     right: 7%; } }
 
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    display: none; } }
+
 .carousel-caption {
   bottom: -8px;
   padding-bottom: 0;
