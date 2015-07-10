@@ -6137,8 +6137,9 @@ footer {
   padding-left: 20px;
   padding-right: 20px; }
   .mp-donate-btn a {
-    color: #fff;
-    text-decoration: none; }
+    color: #fff; }
+    .mp-donate-btn a:hover {
+      text-decoration: none; }
 
 @media (min-width: 768px) {
   .mp-scrolled-top .navbar-nav > li > a {
