@@ -6136,6 +6136,8 @@ footer {
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px; }
+  .mp-donate-btn a {
+    color: #fff; }
 
 @media (min-width: 768px) {
   .mp-scrolled-top .navbar-nav > li > a {
