@@ -13,6 +13,7 @@ var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
+var zip = require('gulp-zip');
 
 
 var config = {
@@ -158,6 +159,12 @@ gulp.task('sass-prod', function() {
     }))
     .pipe(gulp.dest(config.dev + '/assets/styles/'));
 });
+
+gulp.task('zip', ['sass-prod', 'imagemin', 'fonts', 'html-parser', 'assets-parser'], function () {
+  return gulp.src('build/*')
+    .pipe(zip('build.zip'))
+    .pipe(gulp.dest('build'));
+})
 
 gulp.task('default', ['sass-dev', 'connect-dev', 'watch']);
 gulp.task('build-templates', ['sass-prod', 'imagemin', 'fonts', 'template-parser']);
