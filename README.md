@@ -31,8 +31,12 @@ The running app will be accessible at: ([http://localhost:9000/](http://localhos
 
 #### `gulp`
 
-This is the default task that will start the app.
+Default task that will start the app.
 
 #### `gulp build`
 
-This will compile the assets into /build for production use.
+Compile the assets from /dev into /build for production use.
+
+#### `gulp zip`
+
+Zip files from /build into /build/build.zip
