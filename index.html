@@ -11,9 +11,6 @@
 
     <link rel="stylesheet" href="assets/styles/main.min.css">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick-theme.css"/>
-
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.1/json3.min.js"></script>
@@ -31,19 +28,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="pull-left" href="/"><img class="mp-brand-logo" src="assets/images/mosaic-logo.png"></a>
+          <a class="pull-left link" href="/"><img class="mp-brand-logo" src="assets/images/mosaic-logo.png"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://www.mosaicproject.org/aboutus/">ABOUT</a></li>
-            <li><a href="http://www.mosaicproject.org/getinvolved/">GET INVOLVED</a></li>
-            <li><a href="http://www.mosaicproject.org/resources-media/">NEWS</a></li>
-            <li class="visible-xs"><button type="button" class="btn btn-info navbar-btn mp-donate-btn"><a href="http://www.mosaicproject.org/donate/">Donate</a></button></li>
+            <li><a class="link" href="http://www.mosaicproject.org/aboutus/">ABOUT</a></li>
+            <li><a class="link" href="http://www.mosaicproject.org/getinvolved/">GET INVOLVED</a></li>
+            <li><a class="link" href="http://www.mosaicproject.org/resources-media/">NEWS</a></li>
+            <li class="visible-xs"><button type="button" class="btn btn-info navbar-btn mp-donate-btn"><a class="link" href="http://www.mosaicproject.org/donate/">Donate</a></button></li>
           </ul>
           <ul class="nav navbar-nav navbar-right hidden-xs">
-            <li class="mp-nav-fb mp-nav-icon visible-md visible-lg"><a href="https://www.facebook.com/TheMosaicProject"><img src="assets/images/fb-icon.png" /></a></li>
-            <li class="mp-nav-twitter mp-nav-icon visible-md visible-lg"><a href="https://twitter.com/momomosaic"><img src="assets/images/twitter-icon.png" /></a></li>
-            <li class="pull-right"><button type="button" class="btn btn-info navbar-btn mp-donate-btn"><a href="http://www.mosaicproject.org/donate/">Donate</a></button></li>
+            <li class="mp-nav-fb mp-nav-icon visible-md visible-lg"><a class="link" href="https://www.facebook.com/TheMosaicProject"><img src="assets/images/fb-icon.png" /></a></li>
+            <li class="mp-nav-twitter mp-nav-icon visible-md visible-lg"><a class="link" href="https://twitter.com/momomosaic"><img src="assets/images/twitter-icon.png" /></a></li>
+            <li class="pull-right"><a class="btn btn-info navbar-btn mp-donate-btn" href="http://www.mosaicproject.org/donate/">Donate</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,7 +54,9 @@
           </div>
           <div id="mp-main-slides" class="mp-main-slides">
             <div class="mp-slide mp-slide-1">
-              <img class="mp-slide-image" src="assets/images/slide-1-assert.jpg">
+              <img class="mp-slide-image visible-lg visible-md" src="assets/images/slide-1-assert.jpg">
+              <img class="mp-slide-image visible-sm" src="assets/images/slide-1-assert-sm.jpg">
+              <img class="mp-slide-image visible-xs" src="assets/images/slide-1-assert-xs.jpg">
               <div class="carousel-caption">
                 <div class="mp-slide-title">ASSERTIVENESS</div>
                 <div class="mp-slide-quote">
@@ -67,7 +66,9 @@
               </div>
             </div>
             <div class="mp-slide mp-slide-2">
-              <img class="mp-slide-image" src="assets/images/slide-2-conflict.jpg">
+              <img class="mp-slide-image visible-lg visible-md" src="assets/images/slide-2-conflict.jpg">
+              <img class="mp-slide-image visible-sm" src="assets/images/slide-2-conflict-sm.jpg">
+              <img class="mp-slide-image visible-xs" src="assets/images/slide-2-conflict-xs.jpg">
               <div class="carousel-caption">
                 <div class="mp-slide-title">CONFLICT RESOLUTION</div>
                 <div class="mp-slide-quote">
@@ -77,7 +78,9 @@
               </div>
             </div>
             <div class="mp-slide mp-slide-3">
-              <img class="mp-slide-image" src="assets/images/slide-3-empathy.jpg">
+              <img class="mp-slide-image visible-lg visible-md" src="assets/images/slide-3-empathy.jpg">
+              <img class="mp-slide-image visible-sm" src="assets/images/slide-3-empathy-sm.jpg">
+              <img class="mp-slide-image visible-xs" src="assets/images/slide-3-empathy-xs.jpg">
               <div class="carousel-caption">
                 <div class="mp-slide-title">EMPATHY</div>
                 <div class="mp-slide-quote">
@@ -87,12 +90,26 @@
               </div>
             </div>
             <div class="mp-slide mp-slide-4">
-              <img class="mp-slide-image" src="assets/images/slide-4-team.jpg">
+              <img class="mp-slide-image visible-lg visible-md" src="assets/images/slide-4-team.jpg">
+              <img class="mp-slide-image visible-sm" src="assets/images/slide-4-team-sm.jpg">
+              <img class="mp-slide-image visible-xs" src="assets/images/slide-4-team-xs.jpg">
               <div class="carousel-caption">
                 <div class="mp-slide-title">TEAM BUILDING</div>
                 <div class="mp-slide-quote">
                   <p>“I saw some of my students take on leadership roles in group activities, putting in to practice the words they’ve used before — REALLY listening, opening up to new ideas, being allies, supporting each other.”</p>
                   <p>— Leslie, teacher</p>
+                </div>
+              </div>
+            </div>
+            <div class="mp-slide mp-slide-5">
+              <img class="mp-slide-image visible-lg visible-md" src="assets/images/slide-5-diversity.jpg">
+              <img class="mp-slide-image visible-sm" src="assets/images/slide-5-diversity-sm.jpg">
+              <img class="mp-slide-image visible-xs" src="assets/images/slide-5-diversity-xs.jpg">
+              <div class="carousel-caption">
+                <div class="mp-slide-title">DIVERSITY</div>
+                <div class="mp-slide-quote">
+                  <p>“At Mosaic, for the first time I found myself honestly integrated into a diverse community. Because of this experience, I know what is possible and am inspired to take action toward a more peaceful future.”</p>
+                  <p>— Ariel, youth leader</p>
                 </div>
               </div>
             </div>
@@ -130,13 +147,12 @@
         <li>Ph:510-452-3377</li>
         <li>info (at) mosaicproject.org</li>
       </ul>
+      <div class="mp-footer-quote">
+        <p><em>"Because of The Mosaic Project, I believe that peace is possible.”</em></p>
+        <p><em>— Noah, Mosaic Student</em></p>
+      </div>
+      <p><strong>Become a “peace” of our Mosaic</strong></p>
     </footer>
-
-    <script src="assets/scripts.min.js"></script>
-
-    <script src="assets/scripts/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
 
     <script src="assets/scripts/main.min.js"></script>
   </body>
