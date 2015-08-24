@@ -16,7 +16,7 @@
     &.mp-nav-fb, &.mp-nav-twitter {
       padding-left: 30px;
 
-      a {
+      a.link {
         padding-left: 0;
         padding-right: 0;
       }
@@ -50,14 +50,6 @@
     transition: all $mp-header-nav-transition ease;
   }
 
-  .mp-nav-fb a, .mp-nav-twitter a {
-  //  height: 20px;
-  //  width: 20px;
-  //  padding-top: 8px;
-  //  padding-bottom: 8px;
-  //  transition: all $mp-header-nav-transition ease;
-  }
-
   .navbar-btn {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -77,28 +69,29 @@
 }
 
 // donate button
-.mp-donate-btn {
+.navbar-nav > li > a.mp-donate-btn, .navbar-nav > li > a.mp-donate-btn:hover {
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 6px 20px;
 
-  a {
-    color: #fff;
+  color: #fff;
 
-    &:hover {
-      text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
   }
 }
 
+.navbar-nav > li > a.mp-donate-btn:hover {
+  background-color: #d9550e;
+}
+
 @media (min-width: 768px) {
-  .mp-scrolled-top .navbar-nav > li > a {
+  .mp-scrolled-top .navbar-nav > li > a.link {
     padding-top: 15px;
     padding-bottom: 15px;
     transition: all $mp-header-nav-transition ease;
   }
 
-  .mp-scrolled-top .navbar-nav > li.mp-nav-icon > a {
+  .mp-scrolled-top .navbar-nav > li.mp-nav-icon > a.link {
     padding-top: 8px;
     padding-bottom: 8px;
   }
