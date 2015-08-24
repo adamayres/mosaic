@@ -6341,8 +6341,12 @@ footer {
   .navbar-nav > li > a.mp-donate-btn:hover, .navbar-nav > li > a.mp-donate-btn:hover:hover {
     text-decoration: none; }
 
-.navbar-nav > li > a.mp-donate-btn:hover {
-  background-color: #d9550e; }
+.navbar-nav > li > a.mp-donate-btn {
+  display: inline-block; }
+  .navbar-nav > li > a.mp-donate-btn:hover {
+    background-color: #d9550e; }
+  .navbar-nav > li > a.mp-donate-btn:visited {
+    background-color: inherit; }
 
 @media (min-width: 768px) {
   .mp-scrolled-top .navbar-nav > li > a.link {

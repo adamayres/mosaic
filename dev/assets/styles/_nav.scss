@@ -80,8 +80,16 @@
   }
 }
 
-.navbar-nav > li > a.mp-donate-btn:hover {
-  background-color: #d9550e;
+.navbar-nav > li > a.mp-donate-btn {
+  &:hover {
+    background-color: #d9550e;
+
+  }
+  &:visited {
+    background-color: inherit;
+  }
+
+  display: inline-block;
 }
 
 @media (min-width: 768px) {

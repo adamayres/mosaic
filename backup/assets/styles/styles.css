@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'PTSansBoldItalic';
+    src: url('wp-content/themes/MPsimplex/fonts/PTS76F-webfont.eot');
+    src: url(' wp-content/themes/MPsimplex/fonts/PTS76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url(' wp-content/themes/MPsimplex/fonts/PTS76F-webfont.woff') format('woff'),
+         url(' wp-content/themes/MPsimplex/fonts/PTS76F-webfont.ttf') format('truetype'),
+         url(' wp-content/themes/MPsimplex/fonts/PTS76F-webfont.svg#PTSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('wp-content/themes/MPsimplex/fonts/PTS75F-webfont.eot');
+    src: url('wp-content/themes/MPsimplex/fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wp-content/themes/MPsimplex/fonts/PTS75F-webfont.woff') format('woff'),
+         url('wp-content/themes/MPsimplex/fonts/PTS75F-webfont.ttf') format('truetype'),
+         url('wp-content/themes/MPsimplex/fonts/PTS75F-webfont.svg#PTSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('wp-content/themes/MPsimplex/fonts/PTS56F-webfont.eot');
+    src: url('wp-content/themes/MPsimplex/fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wp-content/themes/MPsimplex/fonts/PTS56F-webfont.woff') format('woff'),
+         url('wp-content/themes/MPsimplex/fonts/PTS56F-webfont.ttf') format('truetype'),
+         url('wp-content/themes/MPsimplex/fonts/PTS56F-webfont.svg#PTSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('/wp-content/themes/MPsimplex/fonts/PTS55F-webfont.eot');
+    src: url('/wp-content/themes/MPsimplex/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/MPsimplex/fonts/PTS55F-webfont.woff') format('woff'),
+         url('/wp-content/themes/MPsimplex/fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/MPsimplex/fonts/PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.mp-mission {
+	font: 16px/22px 'PTSansRegular', Arial, Helvetica, sans-serif;}
+	
+body {font-family:'PTSansRegular', Arial, Helvetica, sans-serif;}
+.mp-slide-title {font-family:'PTSansBold', Arial Bold, Helvetica Bold, sans-serif;}
+.navbar-default {font-family:'PTSansBold', Arial Bold, Helvetica Bold, sans-serif;}
+.panel-title {font-family:'PTSansBold', Arial Bold, Helvetica Bold, sans-serif;}
