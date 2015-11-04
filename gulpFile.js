@@ -14,7 +14,7 @@ var pngcrush = require('imagemin-pngcrush');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var zip = require('gulp-zip');
-
+var sftp = require('gulp-sftp');
 
 var config = {
   dev: 'dev',
@@ -167,7 +167,20 @@ gulp.task('zip', ['sass-prod', 'imagemin', 'fonts', 'html-parser', 'assets-parse
     .pipe(filelog())
     .pipe(zip('build.zip'))
     .pipe(gulp.dest('build'));
-})
+});
+
+gulp.task('deploy', ['build'], function () {
+  var dest = '/home/mosaicproject.org/domains/wp.mosaicproject.org/htdocs';
+
+  return gulp.src(['build/**', '!build/build.zip'], {
+    buffer: false
+  }).pipe(sftp({
+    host: 'ftp.skyhouseconsulting.com',
+    user: 'mosaicproject.org',
+    pass: 't1nyt1les',
+    remotePath: dest
+  }));
+});
 
 gulp.task('default', ['sass-dev', 'connect-dev', 'watch']);
 gulp.task('build-templates', ['sass-prod', 'imagemin', 'fonts', 'template-parser']);
