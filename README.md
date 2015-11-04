@@ -40,3 +40,7 @@ Compile the assets from /dev into /build for production use.
 #### `gulp zip`
 
 Zip files from /build into /build/build.zip
+
+#### `gulp deploy`
+
+Deploys the contents to the ftp site.
