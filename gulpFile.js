@@ -177,7 +177,7 @@ gulp.task('deploy', ['build'], function () {
   }).pipe(sftp({
     host: 'ftp.skyhouseconsulting.com',
     user: 'mosaicproject.org',
-    pass: 't1nyt1les',
+    pass: '',
     remotePath: dest
   }));
 });
